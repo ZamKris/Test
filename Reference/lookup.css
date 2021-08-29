@@ -1,0 +1,121 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: montserrat, calibri;
+}
+
+p {
+    font-size: 10px;
+    text-align: justify;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(20, 20, 20);
+    color: rgb(226, 226, 226);
+    text-transform: uppercase;
+    padding: 10px 20px;
+}
+
+.nav h2 a {
+    color: rgb(226, 226, 226);
+    text-decoration: none;
+    font-weight: lighter;
+    font-size: 19px;
+    transition: font-size ease-in-out 350ms;
+}
+
+.nav h2 a:hover {
+    font-size: 20px;
+}
+
+.nav a:hover {
+    color: white;
+}
+
+.nav-links li {
+    display: inline-block;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin-right: 20px;
+    margin-top: 5px;
+    position: relative;
+}
+
+.nav-links li::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0%;
+    background-color: white;
+    position: relative;
+    margin-top: 5px;
+    transition: all ease-in-out 500ms;
+}
+
+.nav-links li:hover::after {
+    width: 100%;
+    font-weight: bolder;
+}
+
+.nav-links li a {
+    color: rgb(226, 226, 226);
+    text-decoration: none;
+    font-size: 11px;
+    padding: 5px 5px 5px 5px;
+}
+
+.hero {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    border-width: 0px;
+    border-bottom-width: 5px;
+    border-style: double;
+    border-color: rgba(255, 255, 255, 1);
+    padding: 45px 0px;
+    text-align: center;
+    transition: all ease-in-out 500ms;
+}
+
+.hero:hover {
+    background-color: white;
+    color: black;
+    border-color: rgba(0, 0, 0, 0.2);
+}
+
+.hero-content {
+    font-weight: 100px;
+    font-size: xx-large;
+    text-transform: lowercase;
+    padding: 55px;
+}
+
+.hero-content h1 {
+    animation: float-in 7s ease-out forwards;
+    transform: translateY(50px);
+}
+
+.hero-content h5 {
+    animation: float-in 10s ease-out forwards;
+    transform: translateY(50px);
+}
+
+@keyframes float-in {
+    22% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
